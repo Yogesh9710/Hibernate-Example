@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/yesdosoft?useSSL=true</property>
+<property name="hibernate.connection.username">root</property>
+<property name="hibernate.connection.password">Yog@1984</property>
+<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+<property name="show_sql">true</property>
+<property name="format_sql">true</property>
+<property name="hbm2ddl.auto">update</property>
+<mapping class="com.yesdosoft.pojo.Emp"/>
+<mapping class="com.yesdosoft.pojo.Student"/>
+<mapping class="com.yesdosoft.pojo.Employee"/>
+<mapping class="com.yesdosoft.pojo.Address"/>
+<mapping class="com.yesdosoft.pojo.Person"/>
+<mapping class="com.yesdosoft.pojo.PhoneNo"/>
+<mapping class="com.yesdosoft.pojo.Category"/>
+<mapping class="com.yesdosoft.pojo.Emp1"/>
+</session-factory>
+</hibernate-configuration>
